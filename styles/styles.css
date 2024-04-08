@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    /*font-family: "Merriweather", serif;*/
+    /*font-weight: 300;*/
+    /*font-style: normal;*/
+
+/*font-family: "Roboto", sans-serif;*/
+/*font-weight: 100;*/
+/*font-style: normal;*/
+
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        4.3 Work  /  4.4 Services / 4.5 Forum / 4.6 footer
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Paars: #5722CD;
+    --Blauw: #4845E4;
+    --Roze: #ED4385;
+    --Zwart: #0C0C0C;
+    --Lichtpaars: #F2F0FF;
+    --Wit: #F3F6F9;
+    --Grijs: #7A7A7A;
+}
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+.h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    width: 100%;
+}
+
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+.div_reusable {
+    margin: 80px auto;
+    width: 625px;
+    text-align: center;
+}
+
+
+.article_services {
+    /*display: block;*/
+    border: solid 1px #5722CD;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+}
+
+.services_div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 45px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#F3F6F9;
+    color: #0C0C0C;
+}
+
+
+.icons_services {
+    width: 75px;
+    height: auto;
+}
+/* --------------- 3.2 Other --------------------------- */
+
+
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-right: 25px;
+}
+
+
+#header {
+    background: linear-gradient(#4845E4, #5722CD);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+
+
+.button_header {
+    border-radius: 25px 25px;
+    padding: 15px 30px;
+    background-color: #ED4385;
+    color: #F2F0FF;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#header p {
+    margin: 1em;
+    font-size: 22px;
+}
+
+.header_small-logo {
+    margin-bottom: -15px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+.hello {
+    height: 500px;
+}
+
+
+.hello .div_reusable {
+    color: #5722CD;
+    font-weight: bold;
+}
+
+.hello p {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.contact {
+    margin-top: 7em;
+    color: #0C0C0C;
+}
+
+/* --------------- 4.3 Work ------------------- */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.squiggle {
+    width: 40px;
+    height: auto;
+    padding: 1em 0 1em 0;
+}
+
+.image_wrapper {
+    display: flex;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 100px 30px 80px 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0.5, 0.5, 2)
+}
+
+.text-work {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    padding: 100px;
+    width: 500px;
+}
+
+/* --------------- 4.4 Services ------------------- */
+.article_services h4 {
+    padding: 10px 0 15px 0;
+}
+
+.article_services h4 {
+    color: var(--Paars);
+}
+
+/*4.5 ------ F O R U M ------*/
+.forum {
+    height: 500px;
+    display: flex;
+    background: linear-gradient(#4845E4, #5722CD);
+    color: var(--Wit);
+
+}
+/*4.6------- F O O T E R ---------*/
+#footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: var(--Zwart);
+
+}
+#footer p {
+    padding: 10px 0 15px 0;
+}
+
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and (min-width: 768px) {
+    /* voor tablets */
+    html {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    /* voor desktops en groter */
+    html {
+        font-size: 18px;
+    }
+}
