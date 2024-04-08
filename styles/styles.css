@@ -245,7 +245,7 @@ li {
 }
 
 @media screen and (min-width: 1200px) {
-    /* voor desktops en groter */
+    /* voor desktops en + */
     html {
         font-size: 18px;
     }
